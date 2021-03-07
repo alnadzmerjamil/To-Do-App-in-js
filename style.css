@@ -1,0 +1,261 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Courier New', Courier, monospace;
+}
+body {
+  background-color: rgb(152, 214, 252);
+}
+hr {
+  width: 100%;
+  margin-top: 10px;
+}
+.container {
+  width: 95%;
+  margin: 0 auto;
+  box-shadow: 0 0 10px rgb(243, 239, 239);
+  border-radius: 2px;
+  /* background-color: rgb(152, 214, 252); */
+  background-color: rgb(152, 214, 252);
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 50px;
+  justify-content: center;
+}
+h3 {
+  width: 100%;
+  background-color: rgb(23, 107, 226);
+  text-align: center;
+  margin-bottom: 10px;
+  border-radius: 2px;
+  padding: 5px;
+  color: white;
+  box-shadow: 0 0 10px rgb(77, 75, 230);
+}
+
+.for-input {
+  width: 50%;
+  text-align: left;
+  margin-top: 5px;
+}
+.for-btn {
+  width: 20%;
+  text-align: left;
+  margin-top: 5px;
+}
+#input-task {
+  width: 100%;
+  height: 30px;
+  border-radius: 5px 0 0 5px;
+  padding: 0 10px;
+  height: 30px;
+  font-size: 3vw;
+  border: none;
+  outline: none;
+}
+#input-task:focus {
+  background-color: rgb(152, 214, 252);
+  border: 1px solid white;
+}
+#btn-create {
+  width: 100%;
+  height: 30px;
+  border-radius: 0 5px 5px 0;
+  position: relative;
+  /* left: -10px; */
+  font-size: 3vw;
+  height: 30px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+#btn-create:hover {
+  text-transform: scale(1.5);
+  transition: 0.3s;
+  color: darkblue;
+  font-size: 2vw;
+}
+#btn-create:focus {
+  background-color: rgb(152, 214, 252);
+  border: 1px solid white;
+}
+.mini-container {
+  width: 100%;
+  margin-top: 20px;
+  font-size: 3vw;
+}
+/* .border-left {
+  padding-bottom: 20px;
+  border-bottom: 1px solid white;
+} */
+.container-done {
+  margin-bottom: 20px;
+}
+
+h4 {
+  text-align: center;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  color: rgb(88, 82, 82);
+}
+/* .for-pending {
+  border: 1px solid darkblue;
+} */
+#done,
+#pending {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  /* text-align: center; */
+  /* padding-left: 15px; */
+}
+li {
+  width: 50%;
+  list-style: none;
+  font-size: 2.5vw;
+  margin-top: 10px;
+  text-align: left;
+  padding-left: 5px;
+  background-color: gainsboro;
+  /* border-bottom: 1px dashed darkblue; */
+}
+/* li:hover {
+  transform: scale(1.5);
+  transition: 0.3s;
+  color: white;
+} */
+.div-ForDoneBtn {
+  background-color: gainsboro;
+  width: 50%;
+  text-align: right;
+  margin-top: 10px;
+  padding-right: 5px;
+}
+.btn-done {
+  width: 30%;
+  height: 100%;
+  outline: none;
+  border-radius: 20px;
+  border: 1px solid white;
+  position: relative;
+  top: -2px;
+  color: red;
+  background: yellowgreen;
+  cursor: pointer;
+}
+.div-emptypending,
+.div-emptydone {
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  line-height: 200px;
+  font-size: 3vw;
+  font-weight: bolder;
+  border-radius: 50%;
+  box-shadow: 0 0 20px darkblue;
+  color: darkgrey;
+}
+.fa {
+  color: blue;
+  cursor: pointer;
+}
+.fa:hover {
+  transform: scale(1.5);
+  transition: 0.3s;
+}
+
+/* tablet */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .container {
+    width: 85%;
+    padding: 15px;
+  }
+  .for-input {
+    width: 50%;
+    text-align: left;
+    margin-top: 5px;
+  }
+  .for-btn {
+    width: 20%;
+    text-align: left;
+    margin-top: 5px;
+  }
+
+  #input-task {
+    height: 40px;
+    font-size: 2vw;
+  }
+  #btn-create {
+    height: 40px;
+    font-size: 2vw;
+  }
+  .mini-container {
+    width: 49.5%;
+    margin-top: 50px;
+    font-size: 2vw;
+  }
+  /* .border-left {
+    padding-bottom: 20px;
+    border-bottom: 0;
+    border-right: 1px solid gainsboro;
+  } */
+
+  li {
+    font-size: 2vw;
+  }
+}
+
+/* desktop */
+@media only screen and (min-width: 992px) {
+  .container {
+    width: 50%;
+    padding: 25px;
+  }
+  h3 {
+    font-size: 1.8vw;
+  }
+  .for-input {
+    width: 50%;
+    text-align: left;
+    margin-top: 5px;
+  }
+  .for-btn {
+    width: 20%;
+    text-align: left;
+    margin-top: 5px;
+  }
+
+  #input-task {
+    height: 40px;
+    font-size: 1.2vw;
+  }
+  #btn-create {
+    height: 40px;
+    font-size: 1.2vw;
+  }
+  .mini-container {
+    width: 49.5%;
+    margin-top: 50px;
+    font-size: 1.5vw;
+    padding: 10px;
+  }
+  /* .border-left {
+    padding-bottom: 20px;
+    border-bottom: 0;
+    border-right: 1px solid gainsboro;
+  } */
+
+  /* #done,
+  #pending {
+    padding-left: 25px;
+  } */
+
+  li {
+    font-size: 1.5vw;
+  }
+}
